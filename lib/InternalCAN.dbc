@@ -1,0 +1,855 @@
+VERSION ""
+
+
+NS_ : 
+	NS_DESC_
+	CM_
+	BA_DEF_
+	BA_
+	VAL_
+	CAT_DEF_
+	CAT_
+	FILTER
+	BA_DEF_DEF_
+	EV_DATA_
+	ENVVAR_DATA_
+	SGTYPE_
+	SGTYPE_VAL_
+	BA_DEF_SGTYPE_
+	BA_SGTYPE_
+	SIG_TYPE_REF_
+	VAL_TABLE_
+	SIG_GROUP_
+	SIG_VALTYPE_
+	SIGTYPE_VALTYPE_
+	BO_TX_BU_
+	BA_DEF_REL_
+	BA_REL_
+	BA_DEF_DEF_REL_
+	BU_SG_REL_
+	BU_EV_REL_
+	BU_BO_REL_
+	SG_MUL_VAL_
+
+BS_:
+
+BU_: MCB OBC_1 OBC_2 OBC_3 OBC_4
+
+
+BO_ 2228289281 Master_All_OBC_Boot: 8 MCB
+ SG_ Boot_ModeRequest : 35|4@0+ (1,0) [0|15] ""  OBC_4,OBC_3,OBC_2,OBC_1
+
+BO_ 2228616961 Master_All_OBC: 8 MCB
+ SG_ OBC_SystemMode : 16|1@1+ (1,0) [0|1] "" Vector__XXX
+ SG_ OBC_AverageCurrent : 7|16@0+ (0.05,0) [0|50] "A"  OBC_4,OBC_3,OBC_2,OBC_1
+
+BO_ 2362745601 TxPGN_53507_ICAN_REQ_01024_ToOBC: 8 MCB
+ SG_ OBC_CALRefIout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_4
+ SG_ OBC_IOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_4
+ SG_ OBC_IOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_4
+
+BO_ 2362680065 TxPGN_53506_ICAN_REQ_01023_ToOBC: 8 MCB
+ SG_ OBC_CALRefVout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_4
+ SG_ OBC_VOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_4
+ SG_ OBC_VOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_4
+
+BO_ 2362614529 TxPGN_53505_ICAN_REQ_01022_ToOBC: 8 MCB
+ SG_ OBC_CALIout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_4
+ SG_ OBC_IOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_4
+ SG_ OBC_IOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_4
+
+BO_ 2362548993 TxPGN_53504_ICAN_REQ_01021_ToOBC: 8 MCB
+ SG_ OBC_CALVout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_4
+ SG_ OBC_VOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_4
+ SG_ OBC_VOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_4
+
+BO_ 2362745345 TxPGN_53507_ICAN_REQ_00724_ToOBC: 8 MCB
+ SG_ OBC_CALRefIout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_3
+ SG_ OBC_IOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_3
+ SG_ OBC_IOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_3
+
+BO_ 2362679809 TxPGN_53506_ICAN_REQ_00723_ToOBC: 8 MCB
+ SG_ OBC_CALRefVout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_3
+ SG_ OBC_VOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_3
+ SG_ OBC_VOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_3
+
+BO_ 2362614273 TxPGN_53505_ICAN_REQ_00722_ToOBC: 8 MCB
+ SG_ OBC_CALIout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_3
+ SG_ OBC_IOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_3
+ SG_ OBC_IOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_3
+
+BO_ 2362548737 TxPGN_53504_ICAN_REQ_00721_ToOBC: 8 MCB
+ SG_ OBC_CALVout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_3
+ SG_ OBC_VOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_3
+ SG_ OBC_VOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_3
+
+BO_ 2362745089 TxPGN_53507_ICAN_REQ_00424_ToOBC: 8 MCB
+ SG_ OBC_CALRefIout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_2
+ SG_ OBC_IOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_2
+ SG_ OBC_IOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_2
+
+BO_ 2362679553 TxPGN_53506_ICAN_REQ_00423_ToOBC: 8 MCB
+ SG_ OBC_CALRefVout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_2
+ SG_ OBC_VOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_2
+ SG_ OBC_VOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_2
+
+BO_ 2362614017 TxPGN_53505_ICAN_REQ_00422_ToOBC: 8 MCB
+ SG_ OBC_CALIout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_2
+ SG_ OBC_IOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_2
+ SG_ OBC_IOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_2
+
+BO_ 2362548481 TxPGN_53504_ICAN_REQ_00421_ToOBC: 8 MCB
+ SG_ OBC_CALVout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_2
+ SG_ OBC_VOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_2
+ SG_ OBC_VOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_2
+
+BO_ 2362744833 TxPGN_53507_ICAN_REQ_00124_ToOBC: 8 MCB
+ SG_ OBC_CALRefIout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_1
+ SG_ OBC_IOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_1
+ SG_ OBC_IOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_1
+
+BO_ 2362679297 TxPGN_53506_ICAN_REQ_00123_ToOBC: 8 MCB
+ SG_ OBC_CALRefVout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_1
+ SG_ OBC_VOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_1
+ SG_ OBC_VOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_1
+
+BO_ 2362613761 TxPGN_53505_ICAN_REQ_00122_ToOBC: 8 MCB
+ SG_ OBC_CALIout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_1
+ SG_ OBC_IOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_1
+ SG_ OBC_IOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_1
+
+BO_ 2362548225 TxPGN_53504_ICAN_REQ_00121_ToOBC: 8 MCB
+ SG_ OBC_CALVout_Control : 39|2@0+ (1,0) [0|3] ""  OBC_1
+ SG_ OBC_VOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_1
+ SG_ OBC_VOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  OBC_1
+
+BO_ 2362704291 OBC4_RxPGN_53507_ICAN_REQ_01020: 8 OBC_4
+ SG_ OBC_CALRefIout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_IOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_IOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2362638755 OBC4_RxPGN_53506_ICAN_REQ_01019: 8 OBC_4
+ SG_ OBC_CALRefVout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_VOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_VOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2362573219 OBC4_RxPGN_53505_ICAN_REQ_01018: 8 OBC_4
+ SG_ OBC_CALIout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_IOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_IOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2362507683 OBC4_RxPGN_53504_ICAN_REQ_01017: 8 OBC_4
+ SG_ OBC_CALVout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_VOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_VOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2365523619 OBC4_RxPGN_65286_ICAN_REQ_01016: 8 OBC_4
+ SG_ OBC_Vin_Frequency_PH3 : 23|8@0+ (0.5,0) [0|127.5] "Hz"  MCB
+ SG_ OBC_Vin_Frequency_PH2 : 15|8@0+ (0.5,0) [0|127.5] "Hz"  MCB
+ SG_ OBC_Vin_Frequency_PH1 : 7|8@0+ (0.5,0) [0|127.5] "Hz"  MCB
+
+BO_ 2365523363 OBC4_RxPGN_65285_ICAN_REQ_01015: 8 OBC_4
+ SG_ OBC_PFC_VOLTAGE_PH3 : 39|16@0+ (0.05,0) [0|500] "V"  MCB
+ SG_ OBC_PFC_VOLTAGE_PH2 : 23|16@0+ (0.05,0) [0|500] "V"  MCB
+ SG_ OBC_PFC_VOLTAGE_PH1 : 7|16@0+ (0.05,0) [0|500] "V"  MCB
+
+BO_ 2362704290 OBC3_RxPGN_53507_ICAN_REQ_00720: 8 OBC_3
+ SG_ OBC_CALRefIout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_IOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_IOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2362638754 OBC3_RxPGN_53506_ICAN_REQ_00719: 8 OBC_3
+ SG_ OBC_CALRefVout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_VOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_VOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2362573218 OBC3_RxPGN_53505_ICAN_REQ_00718: 8 OBC_3
+ SG_ OBC_CALIout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_IOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_IOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2362507682 OBC3_RxPGN_53504_ICAN_REQ_00717: 8 OBC_3
+ SG_ OBC_CALVout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_VOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_VOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2365523618 OBC3_RxPGN_65286_ICAN_REQ_00716: 8 OBC_3
+ SG_ OBC_Vin_Frequency_PH3 : 23|8@0+ (0.5,0) [0|127.5] "Hz"  MCB
+ SG_ OBC_Vin_Frequency_PH2 : 15|8@0+ (0.5,0) [0|127.5] "Hz"  MCB
+ SG_ OBC_Vin_Frequency_PH1 : 7|8@0+ (0.5,0) [0|127.5] "Hz"  MCB
+
+BO_ 2365523362 OBC3_RxPGN_65285_ICAN_REQ_00715: 8 OBC_3
+ SG_ OBC_PFC_VOLTAGE_PH3 : 39|16@0+ (0.05,0) [0|500] "V"  MCB
+ SG_ OBC_PFC_VOLTAGE_PH2 : 23|16@0+ (0.05,0) [0|500] "V"  MCB
+ SG_ OBC_PFC_VOLTAGE_PH1 : 7|16@0+ (0.05,0) [0|500] "V"  MCB
+
+BO_ 2365523617 OBC2_RxPGN_65286_ICAN_REQ_00416: 8 OBC_2
+ SG_ OBC_Vin_Frequency_PH3 : 23|8@0+ (0.5,0) [0|127.5] "Hz"  MCB
+ SG_ OBC_Vin_Frequency_PH2 : 15|8@0+ (0.5,0) [0|127.5] "Hz"  MCB
+ SG_ OBC_Vin_Frequency_PH1 : 7|8@0+ (0.5,0) [0|127.5] "Hz"  MCB
+
+BO_ 2362704289 OBC2_RxPGN_53507_ICAN_REQ_00420: 8 OBC_2
+ SG_ OBC_CALRefIout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_IOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_IOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2362638753 OBC2_RxPGN_53506_ICAN_REQ_00419: 8 OBC_2
+ SG_ OBC_CALRefVout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_VOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_VOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2362573217 OBC2_RxPGN_53505_ICAN_REQ_00418: 8 OBC_2
+ SG_ OBC_CALIout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_IOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_IOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2362507681 OBC2_RxPGN_53504_ICAN_REQ_00417: 8 OBC_2
+ SG_ OBC_CALVout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_VOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_VOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2365523361 OBC2_RxPGN_65285_ICAN_REQ_00415: 8 OBC_2
+ SG_ OBC_PFC_VOLTAGE_PH3 : 39|16@0+ (0.05,0) [0|500] "V"  MCB
+ SG_ OBC_PFC_VOLTAGE_PH2 : 23|16@0+ (0.05,0) [0|500] "V"  MCB
+ SG_ OBC_PFC_VOLTAGE_PH1 : 7|16@0+ (0.05,0) [0|500] "V"  MCB
+
+BO_ 2362704288 OBC1_RxPGN_53507_ICAN_REQ_00120: 8 OBC_1
+ SG_ OBC_CALRefIout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_IOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_IOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2362638752 OBC1_RxPGN_53506_ICAN_REQ_00119: 8 OBC_1
+ SG_ OBC_CALRefVout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_VOUT_REF_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_VOUT_REF_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2362573216 OBC1_RxPGN_53505_ICAN_REQ_00118: 8 OBC_1
+ SG_ OBC_CALIout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_IOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_IOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2362507680 OBC1_RxPGN_53504_ICAN_REQ_00117: 8 OBC_1
+ SG_ OBC_CALVout_Status : 39|2@0+ (1,0) [0|3] "" Vector__XXX
+ SG_ OBC_VOUT_OFFSET_CAL : 23|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+ SG_ OBC_VOUT_K_CAL : 7|16@0- (0.00390625,0) [-128|127.99609375] ""  MCB
+
+BO_ 2365523616 OBC1_RxPGN_65286_ICAN_REQ_00116: 8 OBC_1
+ SG_ OBC_Vin_Frequency_PH3 : 23|8@0+ (0.5,0) [0|127.5] "Hz"  MCB
+ SG_ OBC_Vin_Frequency_PH2 : 15|8@0+ (0.5,0) [0|127.5] "Hz"  MCB
+ SG_ OBC_Vin_Frequency_PH1 : 7|8@0+ (0.5,0) [0|127.5] "Hz"  MCB
+
+BO_ 2365523360 OBC1_RxPGN_65285_ICAN_REQ_00115: 8 OBC_1
+ SG_ OBC_PFC_VOLTAGE_PH3 : 39|16@0+ (0.05,0) [0|500] "V"  MCB
+ SG_ OBC_PFC_VOLTAGE_PH2 : 23|16@0+ (0.05,0) [0|500] "V"  MCB
+ SG_ OBC_PFC_VOLTAGE_PH1 : 7|16@0+ (0.05,0) [0|500] "V"  MCB
+
+BO_ 2364473763 OBC4_RxPGN_61184_ICAN_REQ_01011: 8 OBC_4
+ SG_ Logistic_Info : 15|56@0+ (1,0) [0|7.20575940379279E+016] ""  MCB
+ SG_ Logistic_ID : 7|8@0+ (1,0) [0|255] ""  MCB
+
+BO_ 2364473762 OBC3_RxPGN_61184_ICAN_REQ_00711: 8 OBC_3
+ SG_ Logistic_Info : 15|56@0+ (1,0) [0|7.20575940379279E+016] ""  MCB
+ SG_ Logistic_ID : 7|8@0+ (1,0) [0|255] ""  MCB
+
+BO_ 2364473761 OBC2_RxPGN_61184_ICAN_REQ_00411: 8 OBC_2
+ SG_ Logistic_Info : 15|56@0+ (1,0) [0|7.20575940379279E+016] ""  MCB
+ SG_ Logistic_ID : 7|8@0+ (1,0) [0|255] ""  MCB
+
+BO_ 2364473760 OBC1_RxPGN_61184_ICAN_REQ_00111: 8 OBC_1
+ SG_ Logistic_Info : 15|56@0+ (1,0) [0|7.20575940379279E+016] ""  MCB
+ SG_ Logistic_ID : 7|8@0+ (1,0) [0|255] ""  MCB
+
+BO_ 2229665537 Master_All_Req: 8 MCB
+ SG_ Logistic_ID : 7|8@0+ (1,0) [0|255] ""  OBC_1,OBC_2,OBC_3,OBC_4
+
+BO_ 2365522080 OBC1_RxPGN_65280_ICAN_REQ_00010: 8 OBC_1
+ SG_ CRC : 7|8@0+ (1,0) [0|255] ""  MCB
+ SG_ Clock : 11|4@0+ (1,0) [0|15] ""  MCB
+ SG_ OBC_Iout : 39|16@0+ (0.05,0) [0|50] "A"  MCB
+ SG_ OBC_Power : 55|16@0+ (0.05,0) [0|12] "kW"  MCB
+ SG_ OBC_Vout : 23|16@0+ (0.05,0) [0|550] "V"  MCB
+
+BO_ 2365522336 OBC1_RxPGN_65281_ICAN_REQ_00020: 8 OBC_1
+ SG_ OBC_Vin_ph1 : 7|16@0+ (0.05,0) [0|550] "V"  MCB
+ SG_ OBC_Vin_ph2 : 23|16@0+ (0.05,0) [0|550] "V"  MCB
+ SG_ OBC_Vin_ph3 : 39|16@0+ (0.05,0) [0|550] "V"  MCB
+
+BO_ 2365522592 OBC1_RxPGN_65282_ICAN_REQ_00030: 8 OBC_1
+ SG_ OBC_Iin_ph1 : 7|16@0+ (0.05,0) [0|32] "A"  MCB
+ SG_ OBC_Iin_ph2 : 23|16@0+ (0.05,0) [0|32] "A"  MCB
+ SG_ OBC_Iin_ph3 : 39|16@0+ (0.05,0) [0|32] "A"  MCB
+
+BO_ 2365522848 OBC1_RxPGN_65283_ICAN_REQ_00040: 8 OBC_1
+ SG_ OBC_ErrorUVPPFC : 46|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUnderFreq : 38|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUART : 37|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOVPPFC : 47|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOverFreq : 39|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorI2C : 7|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorACActiveDischarge : 27|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorPermActiveDischarge : 28|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorNoActiveDischarge : 29|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorAutoCheckOVP : 30|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorAutoCheckOTP : 31|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorActiveDischarge : 4|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_DiagnosticSession : 33|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_ActiveDischargeStatus : 9|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_Configuration : 6|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_CrashStatus : 11|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_DeratingConfiguration : 13|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_DeratingOnGoing : 12|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorAlimAux : 19|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorCANcommunication : 34|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorCANframeDLC : 36|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorCANframePeriod : 35|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorChargingMode : 25|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_ErrorModeRequest : 22|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOTP : 18|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOVPVin : 17|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOVPVout : 16|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorSetPointV : 20|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorSetpointI : 21|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUVPVin : 15|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUVPVout : 14|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUnbalancedNetwork : 23|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorIout : 26|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_Status : 3|4@0+ (1,0) [0|15] ""  MCB
+
+BO_ 2365523104 OBC1_RxPGN_65284_ICAN_REQ_00050: 8 OBC_1
+ SG_ OBC_Max_AvailableIout : 7|16@0+ (0.05,0) [0|50] "A"  MCB
+ SG_ OBC_Max_available_Power : 23|16@0+ (0.05,0) [0|12] "kW"  MCB
+ SG_ OBC_TempCTN : 55|8@0- (1,0) [-50|125] "°C"  MCB
+ SG_ OBC_TempMax : 47|8@0- (1,0) [-50|125] "°C"  MCB
+ SG_ OBC_TempSensor : 39|8@0- (1,0) [-50|125] "°C"  MCB
+
+BO_ 2365522081 OBC2_RxPGN_65280_ICAN_REQ_00310: 8 OBC_2
+ SG_ CRC : 7|8@0+ (1,0) [0|255] ""  MCB
+ SG_ Clock : 11|4@0+ (1,0) [0|15] ""  MCB
+ SG_ OBC_Iout : 39|16@0+ (0.05,0) [0|50] "A"  MCB
+ SG_ OBC_Power : 55|16@0+ (0.05,0) [0|12] "kW"  MCB
+ SG_ OBC_Vout : 23|16@0+ (0.05,0) [0|550] "V"  MCB
+
+BO_ 2365522337 OBC2_RxPGN_65281_ICAN_REQ_00320: 8 OBC_2
+ SG_ OBC_Vin_ph1 : 7|16@0+ (0.05,0) [0|550] "V"  MCB
+ SG_ OBC_Vin_ph2 : 23|16@0+ (0.05,0) [0|550] "V"  MCB
+ SG_ OBC_Vin_ph3 : 39|16@0+ (0.05,0) [0|550] "V"  MCB
+
+BO_ 2365522593 OBC2_RxPGN_65282_ICAN_REQ_00330: 8 OBC_2
+ SG_ OBC_Iin_ph1 : 7|16@0+ (0.05,0) [0|32] "A"  MCB
+ SG_ OBC_Iin_ph2 : 23|16@0+ (0.05,0) [0|32] "A"  MCB
+ SG_ OBC_Iin_ph3 : 39|16@0+ (0.05,0) [0|32] "A"  MCB
+
+BO_ 2365522849 OBC2_RxPGN_65283_ICAN_REQ_00340: 8 OBC_2
+ SG_ OBC_ErrorUVPPFC : 46|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUnderFreq : 38|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUART : 37|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOVPPFC : 47|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOverFreq : 39|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorI2C : 7|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorACActiveDischarge : 27|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorPermActiveDischarge : 28|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorNoActiveDischarge : 29|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorAutoCheckOVP : 30|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorAutoCheckOTP : 31|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorActiveDischarge : 4|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_DiagnosticSession : 33|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_ActiveDischargeStatus : 9|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_Configuration : 6|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_CrashStatus : 11|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_DeratingConfiguration : 13|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_DeratingOnGoing : 12|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorAlimAux : 19|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorCANcommunication : 34|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorCANframeDLC : 36|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorCANframePeriod : 35|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorChargingMode : 25|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_ErrorModeRequest : 22|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOTP : 18|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOVPVin : 17|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOVPVout : 16|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorSetPointV : 20|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorSetpointI : 21|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUVPVin : 15|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUVPVout : 14|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUnbalancedNetwork : 23|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorIout : 26|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_Status : 3|4@0+ (1,0) [0|15] ""  MCB
+
+BO_ 2365523105 OBC2_RxPGN_65284_ICAN_REQ_00350: 8 OBC_2
+ SG_ OBC_Max_AvailableIout : 7|16@0+ (0.05,0) [0|50] "A"  MCB
+ SG_ OBC_Max_available_Power : 23|16@0+ (0.05,0) [0|12] "kW"  MCB
+ SG_ OBC_TempCTN : 55|8@0- (1,0) [-50|125] "°C"  MCB
+ SG_ OBC_TempMax : 47|8@0- (1,0) [-50|125] "°C"  MCB
+ SG_ OBC_TempSensor : 39|8@0- (1,0) [-50|125] "°C"  MCB
+
+BO_ 2365522082 OBC3_RxPGN_65280_ICAN_REQ_00610: 8 OBC_3
+ SG_ CRC : 7|8@0+ (1,0) [0|255] ""  MCB
+ SG_ Clock : 11|4@0+ (1,0) [0|15] ""  MCB
+ SG_ OBC_Iout : 39|16@0+ (0.05,0) [0|50] "A"  MCB
+ SG_ OBC_Power : 55|16@0+ (0.05,0) [0|12] "kW"  MCB
+ SG_ OBC_Vout : 23|16@0+ (0.05,0) [0|550] "V"  MCB
+
+BO_ 2365522338 OBC3_RxPGN_65281_ICAN_REQ_00620: 8 OBC_3
+ SG_ OBC_Vin_ph1 : 7|16@0+ (0.05,0) [0|550] "V"  MCB
+ SG_ OBC_Vin_ph2 : 23|16@0+ (0.05,0) [0|550] "V"  MCB
+ SG_ OBC_Vin_ph3 : 39|16@0+ (0.05,0) [0|550] "V"  MCB
+
+BO_ 2365522594 OBC3_RxPGN_65282_ICAN_REQ_00630: 8 OBC_3
+ SG_ OBC_Iin_ph1 : 7|16@0+ (0.05,0) [0|32] "A"  MCB
+ SG_ OBC_Iin_ph2 : 23|16@0+ (0.05,0) [0|32] "A"  MCB
+ SG_ OBC_Iin_ph3 : 39|16@0+ (0.05,0) [0|32] "A"  MCB
+
+BO_ 2365522850 OBC3_RxPGN_65283_ICAN_REQ_00640: 8 OBC_3
+ SG_ OBC_ErrorUVPPFC : 46|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUnderFreq : 38|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUART : 37|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOVPPFC : 47|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOverFreq : 39|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorI2C : 7|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorACActiveDischarge : 27|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorPermActiveDischarge : 28|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorNoActiveDischarge : 29|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorAutoCheckOVP : 30|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorAutoCheckOTP : 31|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorActiveDischarge : 4|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_DiagnosticSession : 33|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_ActiveDischargeStatus : 9|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_Configuration : 6|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_CrashStatus : 11|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_DeratingConfiguration : 13|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_DeratingOnGoing : 12|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorAlimAux : 19|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorCANcommunication : 34|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorCANframeDLC : 36|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorCANframePeriod : 35|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorChargingMode : 25|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_ErrorModeRequest : 22|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOTP : 18|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOVPVin : 17|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOVPVout : 16|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorSetPointV : 20|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorSetpointI : 21|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUVPVin : 15|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUVPVout : 14|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUnbalancedNetwork : 23|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorIout : 26|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_Status : 3|4@0+ (1,0) [0|15] ""  MCB
+
+BO_ 2365523106 OBC3_RxPGN_65284_ICAN_REQ_00650: 8 OBC_3
+ SG_ OBC_Max_AvailableIout : 7|16@0+ (0.05,0) [0|50] "A"  MCB
+ SG_ OBC_Max_available_Power : 23|16@0+ (0.05,0) [0|12] "kW"  MCB
+ SG_ OBC_TempCTN : 55|8@0- (1,0) [-50|125] "°C"  MCB
+ SG_ OBC_TempMax : 47|8@0- (1,0) [-50|125] "°C"  MCB
+ SG_ OBC_TempSensor : 39|8@0- (1,0) [-50|125] "°C"  MCB
+
+BO_ 2365522083 OBC4_RxPGN_65280_ICAN_REQ_00910: 8 OBC_4
+ SG_ CRC : 7|8@0+ (1,0) [0|255] ""  MCB
+ SG_ Clock : 11|4@0+ (1,0) [0|15] ""  MCB
+ SG_ OBC_Iout : 39|16@0+ (0.05,0) [0|50] "A"  MCB
+ SG_ OBC_Power : 55|16@0+ (0.05,0) [0|12] "kW"  MCB
+ SG_ OBC_Vout : 23|16@0+ (0.05,0) [0|550] "V"  MCB
+
+BO_ 2365522339 OBC4_RxPGN_65281_ICAN_REQ_00920: 8 OBC_4
+ SG_ OBC_Vin_ph1 : 7|16@0+ (0.05,0) [0|550] "V"  MCB
+ SG_ OBC_Vin_ph2 : 23|16@0+ (0.05,0) [0|550] "V"  MCB
+ SG_ OBC_Vin_ph3 : 39|16@0+ (0.05,0) [0|550] "V"  MCB
+
+BO_ 2365522595 OBC4_RxPGN_65282_ICAN_REQ_00930: 8 OBC_4
+ SG_ OBC_Iin_ph1 : 7|16@0+ (0.05,0) [0|32] "A"  MCB
+ SG_ OBC_Iin_ph2 : 23|16@0+ (0.05,0) [0|32] "A"  MCB
+ SG_ OBC_Iin_ph3 : 39|16@0+ (0.05,0) [0|32] "A"  MCB
+
+BO_ 2365522851 OBC4_RxPGN_65283_ICAN_REQ_00940: 8 OBC_4
+ SG_ OBC_ErrorUVPPFC : 46|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUnderFreq : 38|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUART : 37|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOVPPFC : 47|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOverFreq : 39|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorI2C : 7|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorACActiveDischarge : 27|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorPermActiveDischarge : 28|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorNoActiveDischarge : 29|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorAutoCheckOVP : 30|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorAutoCheckOTP : 31|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorActiveDischarge : 4|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_DiagnosticSession : 33|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_ActiveDischargeStatus : 9|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_Configuration : 6|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_CrashStatus : 11|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_DeratingConfiguration : 13|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_DeratingOnGoing : 12|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorAlimAux : 19|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorCANcommunication : 34|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorCANframeDLC : 36|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorCANframePeriod : 35|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorChargingMode : 25|2@0+ (1,0) [0|3] ""  MCB
+ SG_ OBC_ErrorModeRequest : 22|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOTP : 18|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOVPVin : 17|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorOVPVout : 16|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorSetPointV : 20|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorSetpointI : 21|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUVPVin : 15|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUVPVout : 14|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorUnbalancedNetwork : 23|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_ErrorIout : 26|1@0+ (1,0) [0|1] ""  MCB
+ SG_ OBC_Status : 3|4@0+ (1,0) [0|15] ""  MCB
+
+BO_ 2365523107 OBC4_RxPGN_65284_ICAN_REQ_00950: 8 OBC_4
+ SG_ OBC_Max_AvailableIout : 7|16@0+ (0.05,0) [0|50] "A"  MCB
+ SG_ OBC_Max_available_Power : 23|16@0+ (0.05,0) [0|12] "kW"  MCB
+ SG_ OBC_TempCTN : 55|8@0- (1,0) [-50|125] "°C"  MCB
+ SG_ OBC_TempMax : 47|8@0- (1,0) [-50|125] "°C"  MCB
+ SG_ OBC_TempSensor : 39|8@0- (1,0) [-50|125] "°C"  MCB
+
+BO_ 2228264961 TxPGN_53408_ICAN_REQ_00100_ToOBC: 8 MCB
+ SG_ CRCreq : 7|8@0+ (1,0) [0|255] ""  OBC_1
+ SG_ ClockReq : 11|4@0+ (1,0) [0|15] ""  OBC_1
+ SG_ OBC_ChargingModeRequest : 55|2@0+ (1,0) [0|3] ""  OBC_1
+ SG_ OBC_FunctionalModeRequest : 56|1@0+ (1,0) [0|1] ""  OBC_1
+ SG_ OBC_ModeRequest : 51|4@0+ (1,0) [0|15] ""  OBC_1
+ SG_ OBC_SetPointI : 39|16@0+ (0.05,0) [0|50] "A"  OBC_1
+ SG_ OBC_SetPointV : 23|16@0+ (0.05,0) [0|550] "V"  OBC_1
+
+BO_ 2228265217 TxPGN_53409_ICAN_REQ_00400_ToOBC: 8 MCB
+ SG_ CRCreq : 7|8@0+ (1,0) [0|255] ""  OBC_2
+ SG_ ClockReq : 11|4@0+ (1,0) [0|15] ""  OBC_2
+ SG_ OBC_ChargingModeRequest : 55|2@0+ (1,0) [0|3] ""  OBC_2
+ SG_ OBC_FunctionalModeRequest : 56|1@0+ (1,0) [0|1] ""  OBC_2
+ SG_ OBC_ModeRequest : 51|4@0+ (1,0) [0|15] ""  OBC_2
+ SG_ OBC_SetPointI : 39|16@0+ (0.05,0) [0|50] "A"  OBC_2
+ SG_ OBC_SetPointV : 23|16@0+ (0.05,0) [0|550] "V"  OBC_2
+
+BO_ 2228265473 TxPGN_53410_ICAN_REQ_00700_ToOBC: 8 MCB
+ SG_ CRCreq : 7|8@0+ (1,0) [0|255] ""  OBC_3
+ SG_ ClockReq : 11|4@0+ (1,0) [0|15] ""  OBC_3
+ SG_ OBC_ChargingModeRequest : 55|2@0+ (1,0) [0|3] ""  OBC_3
+ SG_ OBC_FunctionalModeRequest : 56|1@0+ (1,0) [0|1] ""  OBC_3
+ SG_ OBC_ModeRequest : 51|4@0+ (1,0) [0|15] ""  OBC_3
+ SG_ OBC_SetPointI : 39|16@0+ (0.05,0) [0|50] "A"  OBC_3
+ SG_ OBC_SetPointV : 23|16@0+ (0.05,0) [0|550] "V"  OBC_3
+
+BO_ 2228265729 TxPGN_53411_ICAN_REQ_01000_ToOBC: 8 MCB
+ SG_ CRCreq : 7|8@0+ (1,0) [0|255] ""  OBC_4
+ SG_ ClockReq : 11|4@0+ (1,0) [0|15] ""  OBC_4
+ SG_ OBC_ChargingModeRequest : 55|2@0+ (1,0) [0|3] ""  OBC_4
+ SG_ OBC_FunctionalModeRequest : 56|1@0+ (1,0) [0|1] ""  OBC_4
+ SG_ OBC_ModeRequest : 51|4@0+ (1,0) [0|15] ""  OBC_4
+ SG_ OBC_SetPointI : 39|16@0+ (0.05,0) [0|50] "A"  OBC_4
+ SG_ OBC_SetPointV : 23|16@0+ (0.05,0) [0|550] "V"  OBC_4
+
+
+
+CM_ "We use stack of J1939 without segmented frame and DMx.";
+CM_ SG_ 2228289281 Boot_ModeRequest "Request the DCDC to switch in requested mode
+ (Standby, Active,  (Standby, Active, Enter in sleep mode, Degraded mode)
+Degraded mode can be required by the Master board when Master board is entering programming session and is not able to manage functional CAN messages. Safety mode can be requested in case of crash or isolated failure";
+CM_ SG_ 2228616961 OBC_SystemMode "0: 11kW (1 OBC operational)
+1: 22kW (2 OBC operational)";
+CM_ SG_ 2228616961 OBC_AverageCurrent "average Iout value value between all operational OBC. Used for output current balancing";
+CM_ SG_ 2365522848 OBC_ErrorACActiveDischarge "Detection of an Error of Active discharge during the Autocheck  at startup";
+CM_ SG_ 2365522848 OBC_ActiveDischargeStatus "0x0: not in active discharge
+0x1:active discharging
+0x2:discharge completed
+0x3:discharge failure";
+CM_ SG_ 2365522848 OBC_Configuration "Address configuration bits + mode configuration bit";
+CM_ SG_ 2365522848 OBC_ErrorChargingMode "3 phases is required but 1 phase is received or 1 phase is required and 3 phases is received or DC is requested whereas some phase are detected";
+CM_ SG_ 2365522848 OBC_ErrorIout "Contactor cannot be closed in case of single phase or fuse is off in case of 3 phases or EVSE
+At least one phase is correct";
+CM_ SG_ 2365522848 OBC_Status "State of the OBC (Standby, Active, Ready to Shutdown, Error, Enter in boot mode)";
+CM_ SG_ 2365522849 OBC_ErrorACActiveDischarge "Detection of an Error of Active discharge during the Autocheck  at startup";
+CM_ SG_ 2365522849 OBC_ActiveDischargeStatus "0x0: not in active discharge
+0x1:active discharging
+0x2:discharge completed
+0x3:discharge failure";
+CM_ SG_ 2365522849 OBC_Configuration "Address configuration bits + mode configuration bit";
+CM_ SG_ 2365522849 OBC_ErrorChargingMode "3 phases is required but 1 phase is received or 1 phase is required and 3 phases is received or DC is requested whereas some phase are detected";
+CM_ SG_ 2365522849 OBC_ErrorIout "Contactor cannot be closed in case of single phase or fuse is off in case of 3 phases or EVSE
+At least one phase is correct";
+CM_ SG_ 2365522849 OBC_Status "State of the OBC (Standby, Active, Ready to Shutdown, Error, Enter in boot mode)";
+CM_ SG_ 2365522850 OBC_ErrorACActiveDischarge "Detection of an Error of Active discharge during the Autocheck  at startup";
+CM_ SG_ 2365522850 OBC_ActiveDischargeStatus "0x0: not in active discharge
+0x1:active discharging
+0x2:discharge completed
+0x3:discharge failure";
+CM_ SG_ 2365522850 OBC_Configuration "Address configuration bits + mode configuration bit";
+CM_ SG_ 2365522850 OBC_ErrorChargingMode "3 phases is required but 1 phase is received or 1 phase is required and 3 phases is received or DC is requested whereas some phase are detected";
+CM_ SG_ 2365522850 OBC_ErrorIout "Contactor cannot be closed in case of single phase or fuse is off in case of 3 phases or EVSE
+At least one phase is correct";
+CM_ SG_ 2365522850 OBC_Status "State of the OBC (Standby, Active, Ready to Shutdown, Error, Enter in boot mode)";
+CM_ SG_ 2365522851 OBC_ErrorACActiveDischarge "Detection of an Error of Active discharge during the Autocheck  at startup";
+CM_ SG_ 2365522851 OBC_ActiveDischargeStatus "0x0: not in active discharge
+0x1:active discharging
+0x2:discharge completed
+0x3:discharge failure";
+CM_ SG_ 2365522851 OBC_Configuration "Address configuration bits + mode configuration bit";
+CM_ SG_ 2365522851 OBC_ErrorChargingMode "3 phases is required but 1 phase is received or 1 phase is required and 3 phases is received or DC is requested whereas some phase are detected";
+CM_ SG_ 2365522851 OBC_ErrorIout "Contactor cannot be closed in case of single phase or fuse is off in case of 3 phases or EVSE
+At least one phase is correct";
+CM_ SG_ 2365522851 OBC_Status "State of the OBC (Standby, Active, Ready to Shutdown, Error, Enter in boot mode)";
+CM_ SG_ 2228264961 OBC_ChargingModeRequest "AC Three Phase, AC Single phase, DC (vehicle configuration)";
+CM_ SG_ 2228264961 OBC_FunctionalModeRequest "Constant current or Constant Voltage (=BMS_WOBC_ModeRequest)";
+CM_ SG_ 2228264961 OBC_ModeRequest "Request the OBC to switch in requested mode
+ (Standby, Active, Enter in sleep mode)";
+CM_ SG_ 2228265217 OBC_ChargingModeRequest "AC Three Phase, AC Single phase, DC (vehicle configuration)";
+CM_ SG_ 2228265217 OBC_FunctionalModeRequest "Constant current or Constant Voltage (=BMS_WOBC_ModeRequest)";
+CM_ SG_ 2228265217 OBC_ModeRequest "Request the OBC to switch in requested mode
+ (Standby, Active, Enter in sleep mode)";
+CM_ SG_ 2228265473 OBC_ChargingModeRequest "AC Three Phase, AC Single phase, DC (vehicle configuration)";
+CM_ SG_ 2228265473 OBC_FunctionalModeRequest "Constant current or Constant Voltage (=BMS_WOBC_ModeRequest)";
+CM_ SG_ 2228265473 OBC_ModeRequest "Request the OBC to switch in requested mode
+ (Standby, Active, Enter in sleep mode)";
+CM_ SG_ 2228265729 OBC_ChargingModeRequest "AC Three Phase, AC Single phase, DC (vehicle configuration)";
+CM_ SG_ 2228265729 OBC_FunctionalModeRequest "Constant current or Constant Voltage (=BMS_WOBC_ModeRequest)";
+CM_ SG_ 2228265729 OBC_ModeRequest "Request the OBC to switch in requested mode
+ (Standby, Active, Enter in sleep mode)";
+BA_DEF_  "DBName" STRING ;
+BA_DEF_  "BusType" STRING ;
+BA_DEF_ BO_  "VFrameFormat" ENUM  "StandardCAN","ExtendedCAN","reserved","J1939PG","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","reserved","StandardCAN_FD","ExtendedCAN_FD";
+BA_DEF_ BO_  "GenMsgSendType" ENUM  "Cyclic","Event","CyclicIfActive","SpontanWithDelay","CyclicAndSpontan","CyclicAndSpontanWithDelay";
+BA_DEF_ BO_  "GenMsgCycleTime" INT 0 0;
+BA_DEF_ BO_  "GenMsgDelayTime" INT 0 0;
+BA_DEF_ SG_  "GenSigStartValue" FLOAT 0 0;
+BA_DEF_DEF_  "DBName" "Cluster";
+BA_DEF_DEF_  "BusType" "CAN";
+BA_DEF_DEF_  "VFrameFormat" "J1939PG";
+BA_DEF_DEF_  "GenMsgSendType" "Cyclic";
+BA_DEF_DEF_  "GenMsgCycleTime" 0;
+BA_DEF_DEF_  "GenMsgDelayTime" 0;
+BA_DEF_DEF_  "GenSigStartValue" 0;
+BA_ "DBName" "Cluster";
+BA_ "GenMsgCycleTime" BO_ 2228289281 10;
+BA_ "GenMsgSendType" BO_ 2228289281 0;
+BA_ "VFrameFormat" BO_ 2228289281 1;
+BA_ "GenMsgCycleTime" BO_ 2228616961 10;
+BA_ "VFrameFormat" BO_ 2228616961 1;
+BA_ "VFrameFormat" BO_ 2362745601 1;
+BA_ "GenMsgSendType" BO_ 2362745601 1;
+BA_ "VFrameFormat" BO_ 2362680065 1;
+BA_ "GenMsgSendType" BO_ 2362680065 1;
+BA_ "VFrameFormat" BO_ 2362614529 1;
+BA_ "GenMsgSendType" BO_ 2362614529 1;
+BA_ "VFrameFormat" BO_ 2362548993 1;
+BA_ "GenMsgSendType" BO_ 2362548993 1;
+BA_ "VFrameFormat" BO_ 2362745345 1;
+BA_ "GenMsgSendType" BO_ 2362745345 1;
+BA_ "VFrameFormat" BO_ 2362679809 1;
+BA_ "GenMsgSendType" BO_ 2362679809 1;
+BA_ "VFrameFormat" BO_ 2362614273 1;
+BA_ "GenMsgSendType" BO_ 2362614273 1;
+BA_ "VFrameFormat" BO_ 2362548737 1;
+BA_ "GenMsgSendType" BO_ 2362548737 1;
+BA_ "VFrameFormat" BO_ 2362745089 1;
+BA_ "GenMsgSendType" BO_ 2362745089 1;
+BA_ "VFrameFormat" BO_ 2362679553 1;
+BA_ "GenMsgSendType" BO_ 2362679553 1;
+BA_ "VFrameFormat" BO_ 2362614017 1;
+BA_ "GenMsgSendType" BO_ 2362614017 1;
+BA_ "VFrameFormat" BO_ 2362548481 1;
+BA_ "GenMsgSendType" BO_ 2362548481 1;
+BA_ "VFrameFormat" BO_ 2362744833 1;
+BA_ "GenMsgSendType" BO_ 2362744833 1;
+BA_ "VFrameFormat" BO_ 2362679297 1;
+BA_ "GenMsgSendType" BO_ 2362679297 1;
+BA_ "VFrameFormat" BO_ 2362613761 1;
+BA_ "GenMsgSendType" BO_ 2362613761 1;
+BA_ "VFrameFormat" BO_ 2362548225 1;
+BA_ "GenMsgSendType" BO_ 2362548225 1;
+BA_ "VFrameFormat" BO_ 2362704291 1;
+BA_ "GenMsgSendType" BO_ 2362704291 1;
+BA_ "VFrameFormat" BO_ 2362638755 1;
+BA_ "GenMsgSendType" BO_ 2362638755 1;
+BA_ "VFrameFormat" BO_ 2362573219 1;
+BA_ "GenMsgSendType" BO_ 2362573219 1;
+BA_ "VFrameFormat" BO_ 2362507683 1;
+BA_ "GenMsgSendType" BO_ 2362507683 1;
+BA_ "VFrameFormat" BO_ 2365523619 1;
+BA_ "GenMsgCycleTime" BO_ 2365523619 100;
+BA_ "VFrameFormat" BO_ 2365523363 1;
+BA_ "GenMsgCycleTime" BO_ 2365523363 100;
+BA_ "VFrameFormat" BO_ 2362704290 1;
+BA_ "GenMsgSendType" BO_ 2362704290 1;
+BA_ "VFrameFormat" BO_ 2362638754 1;
+BA_ "GenMsgSendType" BO_ 2362638754 1;
+BA_ "VFrameFormat" BO_ 2362573218 1;
+BA_ "GenMsgSendType" BO_ 2362573218 1;
+BA_ "VFrameFormat" BO_ 2362507682 1;
+BA_ "GenMsgSendType" BO_ 2362507682 1;
+BA_ "VFrameFormat" BO_ 2365523618 1;
+BA_ "GenMsgCycleTime" BO_ 2365523618 100;
+BA_ "VFrameFormat" BO_ 2365523362 1;
+BA_ "GenMsgCycleTime" BO_ 2365523362 100;
+BA_ "VFrameFormat" BO_ 2365523617 1;
+BA_ "GenMsgCycleTime" BO_ 2365523617 100;
+BA_ "VFrameFormat" BO_ 2362704289 1;
+BA_ "GenMsgSendType" BO_ 2362704289 1;
+BA_ "VFrameFormat" BO_ 2362638753 1;
+BA_ "GenMsgSendType" BO_ 2362638753 1;
+BA_ "VFrameFormat" BO_ 2362573217 1;
+BA_ "GenMsgSendType" BO_ 2362573217 1;
+BA_ "VFrameFormat" BO_ 2362507681 1;
+BA_ "GenMsgSendType" BO_ 2362507681 1;
+BA_ "VFrameFormat" BO_ 2365523361 1;
+BA_ "GenMsgCycleTime" BO_ 2365523361 100;
+BA_ "VFrameFormat" BO_ 2362704288 1;
+BA_ "GenMsgSendType" BO_ 2362704288 1;
+BA_ "VFrameFormat" BO_ 2362638752 1;
+BA_ "GenMsgSendType" BO_ 2362638752 1;
+BA_ "VFrameFormat" BO_ 2362573216 1;
+BA_ "GenMsgSendType" BO_ 2362573216 1;
+BA_ "VFrameFormat" BO_ 2362507680 1;
+BA_ "GenMsgSendType" BO_ 2362507680 1;
+BA_ "VFrameFormat" BO_ 2365523616 1;
+BA_ "GenMsgCycleTime" BO_ 2365523616 100;
+BA_ "VFrameFormat" BO_ 2365523360 1;
+BA_ "GenMsgCycleTime" BO_ 2365523360 100;
+BA_ "GenMsgSendType" BO_ 2364473763 1;
+BA_ "VFrameFormat" BO_ 2364473763 1;
+BA_ "GenMsgSendType" BO_ 2364473762 1;
+BA_ "VFrameFormat" BO_ 2364473762 1;
+BA_ "GenMsgSendType" BO_ 2364473761 1;
+BA_ "VFrameFormat" BO_ 2364473761 1;
+BA_ "GenMsgSendType" BO_ 2364473760 1;
+BA_ "VFrameFormat" BO_ 2364473760 1;
+BA_ "GenMsgSendType" BO_ 2229665537 1;
+BA_ "VFrameFormat" BO_ 2229665537 1;
+BA_ "GenMsgCycleTime" BO_ 2365522080 10;
+BA_ "GenMsgSendType" BO_ 2365522080 0;
+BA_ "VFrameFormat" BO_ 2365522080 1;
+BA_ "GenMsgCycleTime" BO_ 2365522336 100;
+BA_ "GenMsgSendType" BO_ 2365522336 0;
+BA_ "VFrameFormat" BO_ 2365522336 1;
+BA_ "GenMsgCycleTime" BO_ 2365522592 100;
+BA_ "GenMsgSendType" BO_ 2365522592 0;
+BA_ "VFrameFormat" BO_ 2365522592 1;
+BA_ "GenMsgCycleTime" BO_ 2365522848 10;
+BA_ "GenMsgSendType" BO_ 2365522848 0;
+BA_ "VFrameFormat" BO_ 2365522848 1;
+BA_ "GenMsgCycleTime" BO_ 2365523104 100;
+BA_ "GenMsgSendType" BO_ 2365523104 0;
+BA_ "VFrameFormat" BO_ 2365523104 1;
+BA_ "GenMsgCycleTime" BO_ 2365522081 10;
+BA_ "GenMsgSendType" BO_ 2365522081 0;
+BA_ "VFrameFormat" BO_ 2365522081 1;
+BA_ "GenMsgCycleTime" BO_ 2365522337 100;
+BA_ "GenMsgSendType" BO_ 2365522337 0;
+BA_ "VFrameFormat" BO_ 2365522337 1;
+BA_ "GenMsgCycleTime" BO_ 2365522593 100;
+BA_ "GenMsgSendType" BO_ 2365522593 0;
+BA_ "VFrameFormat" BO_ 2365522593 1;
+BA_ "GenMsgCycleTime" BO_ 2365522849 10;
+BA_ "GenMsgSendType" BO_ 2365522849 0;
+BA_ "VFrameFormat" BO_ 2365522849 1;
+BA_ "GenMsgCycleTime" BO_ 2365523105 100;
+BA_ "GenMsgSendType" BO_ 2365523105 0;
+BA_ "VFrameFormat" BO_ 2365523105 1;
+BA_ "GenMsgCycleTime" BO_ 2365522082 10;
+BA_ "GenMsgSendType" BO_ 2365522082 0;
+BA_ "VFrameFormat" BO_ 2365522082 1;
+BA_ "GenMsgCycleTime" BO_ 2365522338 100;
+BA_ "GenMsgSendType" BO_ 2365522338 0;
+BA_ "VFrameFormat" BO_ 2365522338 1;
+BA_ "GenMsgCycleTime" BO_ 2365522594 100;
+BA_ "GenMsgSendType" BO_ 2365522594 0;
+BA_ "VFrameFormat" BO_ 2365522594 1;
+BA_ "GenMsgCycleTime" BO_ 2365522850 10;
+BA_ "VFrameFormat" BO_ 2365522850 1;
+BA_ "GenMsgCycleTime" BO_ 2365523106 100;
+BA_ "GenMsgSendType" BO_ 2365523106 0;
+BA_ "VFrameFormat" BO_ 2365523106 1;
+BA_ "GenMsgCycleTime" BO_ 2365522083 10;
+BA_ "GenMsgSendType" BO_ 2365522083 0;
+BA_ "VFrameFormat" BO_ 2365522083 1;
+BA_ "GenMsgCycleTime" BO_ 2365522339 100;
+BA_ "GenMsgSendType" BO_ 2365522339 0;
+BA_ "VFrameFormat" BO_ 2365522339 1;
+BA_ "GenMsgCycleTime" BO_ 2365522595 100;
+BA_ "GenMsgSendType" BO_ 2365522595 0;
+BA_ "VFrameFormat" BO_ 2365522595 1;
+BA_ "GenMsgCycleTime" BO_ 2365522851 10;
+BA_ "VFrameFormat" BO_ 2365522851 1;
+BA_ "GenMsgCycleTime" BO_ 2365523107 100;
+BA_ "GenMsgSendType" BO_ 2365523107 0;
+BA_ "VFrameFormat" BO_ 2365523107 1;
+BA_ "GenMsgCycleTime" BO_ 2228264961 10;
+BA_ "GenMsgSendType" BO_ 2228264961 0;
+BA_ "VFrameFormat" BO_ 2228264961 1;
+BA_ "GenMsgCycleTime" BO_ 2228265217 10;
+BA_ "GenMsgSendType" BO_ 2228265217 0;
+BA_ "VFrameFormat" BO_ 2228265217 1;
+BA_ "GenMsgCycleTime" BO_ 2228265473 10;
+BA_ "GenMsgSendType" BO_ 2228265473 0;
+BA_ "VFrameFormat" BO_ 2228265473 1;
+BA_ "GenMsgCycleTime" BO_ 2228265729 10;
+BA_ "GenMsgSendType" BO_ 2228265729 0;
+BA_ "VFrameFormat" BO_ 2228265729 1;
+VAL_ 2362745601 OBC_CALRefIout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362680065 OBC_CALRefVout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362614529 OBC_CALIout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362548993 OBC_CALVout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362745345 OBC_CALRefIout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362679809 OBC_CALRefVout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362614273 OBC_CALIout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362548737 OBC_CALVout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362745089 OBC_CALRefIout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362679553 OBC_CALRefVout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362614017 OBC_CALIout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362548481 OBC_CALVout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362744833 OBC_CALRefIout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362679297 OBC_CALRefVout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362613761 OBC_CALIout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362548225 OBC_CALVout_Control 3 "Read" 1 "Write" ;
+VAL_ 2362704291 OBC_CALRefIout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362638755 OBC_CALRefVout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362573219 OBC_CALIout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362507683 OBC_CALVout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362704290 OBC_CALRefIout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362638754 OBC_CALRefVout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362573218 OBC_CALIout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362507682 OBC_CALVout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362704289 OBC_CALRefIout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362638753 OBC_CALRefVout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362573217 OBC_CALIout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362507681 OBC_CALVout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362704288 OBC_CALRefIout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362638752 OBC_CALRefVout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362573216 OBC_CALIout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2362507680 OBC_CALVout_Status 3 "Read OK" 2 "Read NOK" 1 "Write OK" 0 "Write NOK" ;
+VAL_ 2364473763 Logistic_ID 68 "DCDC secondary Boot SW PN" 67 "DCDC secondary Applicative SW PN" 66 "DCDC HW serial number" 65 "DCDC HW version" 36 "OBC secondary Boot SW PN" 35 "OBC secondary Applicative SW PN" 34 "OBC HW serial number" 33 "OBC HW version" ;
+VAL_ 2364473762 Logistic_ID 68 "DCDC secondary Boot SW PN" 67 "DCDC secondary Applicative SW PN" 66 "DCDC HW serial number" 65 "DCDC HW version" 36 "OBC secondary Boot SW PN" 35 "OBC secondary Applicative SW PN" 34 "OBC HW serial number" 33 "OBC HW version" ;
+VAL_ 2364473761 Logistic_ID 68 "DCDC secondary Boot SW PN" 67 "DCDC secondary Applicative SW PN" 66 "DCDC HW serial number" 65 "DCDC HW version" 36 "OBC secondary Boot SW PN" 35 "OBC secondary Applicative SW PN" 34 "OBC HW serial number" 33 "OBC HW version" ;
+VAL_ 2364473760 Logistic_ID 68 "DCDC secondary Boot SW PN" 67 "DCDC secondary Applicative SW PN" 66 "DCDC HW serial number" 65 "DCDC HW version" 36 "OBC secondary Boot SW PN" 35 "OBC secondary Applicative SW PN" 34 "OBC HW serial number" 33 "OBC HW version" ;
+VAL_ 2229665537 Logistic_ID 68 "DCDC secondary Boot SW PN" 67 "DCDC secondary Applicative SW PN" 66 "DCDC HW serial number" 65 "DCDC HW version" 36 "OBC secondary Boot SW PN" 35 "OBC secondary Applicative SW PN" 34 "OBC HW serial number" 33 "OBC HW version" ;
+VAL_ 2365522848 OBC_DiagnosticSession 3 "Boot SW, Programming session" 2 "Boot SW, No valid Applicative SW" 1 "Applicative SW, diag session" 0 "Applicative SW, No diag session" ;
+VAL_ 2365522848 OBC_ActiveDischargeStatus 3 "Discharge Failure" 2 "Discharge complete" 1 "Active discharging" 0 "Not in ActiveDischarge" ;
+VAL_ 2365522848 OBC_CrashStatus 3 "Crash Detected on CAN only" 2 "Crash Detected on analog only" 1 "Crash Detected on both signal" 0 "No Crash Detected" ;
+VAL_ 2365522848 OBC_ErrorChargingMode 3 "DC required-some phases detected" 2 "1 phase required-3 ph detected" 1 "3 phases required-1 ph detected" 0 "No Error" ;
+VAL_ 2365522848 OBC_Status 10 "Default (not used)" 9 "Initialization" 8 "Active Discharge" 7 "Boot" 6 "Not Ready" 5 "Error Recoverable" 4 "Error Not Recoverable" 3 "Degraded (not used)" 2 "Shutdown" 1 "Active" 0 "Standby" ;
+VAL_ 2365522849 OBC_DiagnosticSession 3 "Boot SW, Programming session" 2 "Boot SW, No valid Applicative SW" 1 "Applicative SW, diag session" 0 "Applicative SW, No diag session" ;
+VAL_ 2365522849 OBC_ActiveDischargeStatus 3 "Discharge Failure" 2 "Discharge complete" 1 "Active discharging" 0 "Not in ActiveDischarge" ;
+VAL_ 2365522849 OBC_CrashStatus 3 "Crash Detected on CAN only" 2 "Crash Detected on analog only" 1 "Crash Detected on both signal" 0 "No Crash Detected" ;
+VAL_ 2365522849 OBC_ErrorChargingMode 3 "DC required-some phases detected" 2 "1 phase required-3 ph detected" 1 "3 phases required-1 ph detected" 0 "No Error" ;
+VAL_ 2365522849 OBC_Status 10 "Default (not used)" 9 "Initialization" 8 "Active Discharge" 7 "Boot" 6 "Not Ready" 5 "Error Recoverable" 4 "Error Not Recoverable" 3 "Degraded (not used)" 2 "Shutdown" 1 "Active" 0 "Standby" ;
+VAL_ 2365522850 OBC_DiagnosticSession 3 "Boot SW, Programming session" 2 "Boot SW, No valid Applicative SW" 1 "Applicative SW, diag session" 0 "Applicative SW, No diag session" ;
+VAL_ 2365522850 OBC_ActiveDischargeStatus 3 "Discharge Failure" 2 "Discharge complete" 1 "Active discharging" 0 "Not in ActiveDischarge" ;
+VAL_ 2365522850 OBC_CrashStatus 3 "Crash Detected on CAN only" 2 "Crash Detected on analog only" 1 "Crash Detected on both signal" 0 "No Crash Detected" ;
+VAL_ 2365522850 OBC_ErrorChargingMode 3 "DC required-some phases detected" 2 "1 phase required-3 ph detected" 1 "3 phases required-1 ph detected" 0 "No Error" ;
+VAL_ 2365522850 OBC_Status 10 "Default (not used)" 9 "Initialization" 8 "Active Discharge" 7 "Boot" 6 "Not Ready" 5 "Error Recoverable" 4 "Error Not Recoverable" 3 "Degraded (not used)" 2 "Shutdown" 1 "Active" 0 "Standby" ;
+VAL_ 2365522851 OBC_DiagnosticSession 3 "Boot SW, Programming session" 2 "Boot SW, No valid Applicative SW" 1 "Applicative SW, diag session" 0 "Applicative SW, No diag session" ;
+VAL_ 2365522851 OBC_ActiveDischargeStatus 3 "Discharge Failure" 2 "Discharge complete" 1 "Active discharging" 0 "Not in ActiveDischarge" ;
+VAL_ 2365522851 OBC_CrashStatus 3 "Crash Detected on CAN only" 2 "Crash Detected on analog only" 1 "Crash Detected on both signal" 0 "No Crash Detected" ;
+VAL_ 2365522851 OBC_ErrorChargingMode 3 "DC required-some phases detected" 2 "1 phase required-3 ph detected" 1 "3 phases required-1 ph detected" 0 "No Error" ;
+VAL_ 2365522851 OBC_Status 10 "Default (not used)" 9 "Initialization" 8 "Active Discharge" 7 "Boot" 6 "Not Ready" 5 "Error Recoverable" 4 "Error Not Recoverable" 3 "Degraded (not used)" 2 "Shutdown" 1 "Active" 0 "Standby" ;
+VAL_ 2228264961 OBC_ChargingModeRequest 2 "DC" 1 "AC Single Phase" 0 "AC Three Phase" ;
+VAL_ 2228264961 OBC_FunctionalModeRequest 1 "Constant Current" 0 "Constant Voltage" ;
+VAL_ 2228264961 OBC_ModeRequest 10 "Default (not used)" 9 "Initialization (Not used)" 8 "Active Discharge" 7 "Boot" 6 "Not Ready (not used)" 5 "Error Recoverable (not used)" 4 "Error Not Recoverable (not used)" 3 "Degraded" 2 "Shutdown" 1 "Active" 0 "Standby" ;
+VAL_ 2228265217 OBC_ChargingModeRequest 2 "DC" 1 "AC Single Phase" 0 "AC Three Phase" ;
+VAL_ 2228265217 OBC_FunctionalModeRequest 1 "Constant Current" 0 "Constant Voltage" ;
+VAL_ 2228265217 OBC_ModeRequest 10 "Default (not used)" 9 "Initialization (Not used)" 8 "Active Discharge" 7 "Boot" 6 "Not Ready (not used)" 5 "Error Recoverable (not used)" 4 "Error Not Recoverable (not used)" 3 "Degraded" 2 "Shutdown" 1 "Active" 0 "Standby" ;
+VAL_ 2228265473 OBC_ChargingModeRequest 2 "DC" 1 "AC Single Phase" 0 "AC Three Phase" ;
+VAL_ 2228265473 OBC_FunctionalModeRequest 1 "Constant Current" 0 "Constant Voltage" ;
+VAL_ 2228265473 OBC_ModeRequest 10 "Default (not used)" 9 "Initialization (Not used)" 8 "Active Discharge" 7 "Boot" 6 "Not Ready (not used)" 5 "Error Recoverable (not used)" 4 "Error Not Recoverable (not used)" 3 "Degraded" 2 "Shutdown" 1 "Active" 0 "Standby" ;
+VAL_ 2228265729 OBC_ChargingModeRequest 2 "DC" 1 "AC Single Phase" 0 "AC Three Phase" ;
+VAL_ 2228265729 OBC_FunctionalModeRequest 1 "Constant Current" 0 "Constant Voltage" ;
+VAL_ 2228265729 OBC_ModeRequest 10 "Default (not used)" 9 "Initialization (Not used)" 8 "Active Discharge" 7 "Boot" 6 "Not Ready (not used)" 5 "Error Recoverable (not used)" 4 "Error Not Recoverable (not used)" 3 "Degraded" 2 "Shutdown" 1 "Active" 0 "Standby" ;
+
